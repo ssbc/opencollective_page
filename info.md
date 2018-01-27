@@ -25,5 +25,7 @@ There are _so many_ #somebodyshould tagged ideas that would be amazing to nail. 
 
 Scuttlebutt is the underlying protocol and database. The Secure Scuttlebutt Consortium (SSBC) is a group of some of the programmers and community-gardeners who have been heavily involved with the development of the tools and the growth of the social space. It's [these lovely people **here**](https://github.com/orgs/ssbc/people).
 
+![](https://raw.githubusercontent.com/ssbc/opencollective_page/master/members.jpg)
+
 We've had experience with receiving and distributing grants over the past year, and are excited to use Open Collective to help make  our process more transparent.
 
