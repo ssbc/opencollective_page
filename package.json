@@ -1,0 +1,21 @@
+{
+  "name": "opencollective_page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "bankai start index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bankai": "^9.4.0"
+  },
+  "dependencies": {
+    "insert-css": "^2.0.0",
+    "mutant": "^3.22.1",
+    "setimmediate": "^1.0.5",
+    "xhr": "^2.4.1"
+  }
+}
