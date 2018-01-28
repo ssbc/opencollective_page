@@ -2,6 +2,11 @@ const { h, Array: MutantArray, map } = require('mutant')
 const { get } = require('xhr')
 require('setimmediate')
 
+const OMITTED_USERS = [
+  'noffle',
+  'pfraze'
+]
+
 const avatars = MutantArray ([])
 
 const app = h('Avatars', [
@@ -12,10 +17,12 @@ document.body.appendChild(app)
 
 get('https://api.github.com/orgs/ssbc/members', (err, res) => {
   const data = JSON.parse(res.body)
-  const urls = data.map(user => {
-    if (!user.avatar_url) console.log(user) // some people might be using gravatars
-    return user.avatar_url
-  })
+  const urls = data
+    .filter(user => !OMITTED_USERS.includes(user.login))
+    .map(user => {
+      if (!user.avatar_url) console.log(user) // some people might be using gravatars
+      return user.avatar_url
+    })
   avatars.set(urls)
 })
 
